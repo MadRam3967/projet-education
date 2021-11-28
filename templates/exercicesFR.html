@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RickEd</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+  </head>
+    <header>
+      <div class="container">
+        <image class="logo", src="{{ url_for('static',filename='images/logo.png') }}">
+        <h1 class="logo_name">RickEd</h1>
+        <strong><nav>
+          <div class="menu">
+            <li><a href="{{ url_for('accueil') }}" class="mad-link">Accueil</a></li>
+            <li><a href="{{ url_for('exercices') }}" class="cool-link">Exercices</a></li>
+            <li><a href="{{ url_for('jeux') }}" class="cool-link">Jeux</a></li>
+            <li><a href="{{ url_for('plus') }}" class="cool-link">Autres</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+  <div class='menuFr'>
+    <li>Catégories</li>
+    <div class="cat">
+      <li><a href="{{url_for('sonsFR')}}">Les sons</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('qqoFR')}}">Qui, Quand et Où</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('vocabulaireFR')}}">Le vocabulaire</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('vcFR')}}">Les voyells et les consonnes</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('miFR')}}">Les mots et les images</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('mMFR')}}">Les lettres minuscules et majuscules</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('syllFR')}}">Les syllabes</a></li>
+    </div>
+  </div>
+  <div class="container1">
+    {%block content%}
+    {%endblock%}
+  </div>
+</html>

@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(0, 132, 184);
+  }
+  
+  /*
+   * Formatting the header area
+   */
+  
+  header {
+    background-color: rgb(255, 174, 0);
+    height: 100px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+  }
+  
+  header h1.logo_name {
+    margin-top: 35px;
+    font-size: 2.2em;
+    color: rgb(0, 132, 184);
+    float: left;
+    font-family: "Rocher"
+  }
+  
+  header h1.logo_name:hover {
+    color: rgb(0, 132, 184)f;
+    text-decoration: none;
+  }
+  
+  header .logo{
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  
+  img.logo + h1.logo_name{
+    margin-left: 90px
+  }
+  
+  /*
+   * Center the body content
+   */
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  div.home {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+  
+  div.about {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+  
+  h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  
+  h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #999;
+  }
+  
+  .menu {
+    float: right;
+    margin-top: 40px;
+  
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 180px;
+  }
+  
+  .menu li + li {
+    margin-right: 200px;
+    width: 30px;
+  }
+  
+  .menu li a {
+    color: rgb(0, 132, 184);
+    text-decoration: none;
+    position: absolute;
+    font-size: 20px;
+  }
+  
+  .cool-link::after{
+    content:'';
+    display:block;
+    width:0;
+    height:2px;
+    background: rgb(0, 132, 184);
+    transition: width .6s
+  }
+  
+  .cool-link:hover::after{
+    width:100%;
+    transition: width .3s;
+  }
+  
+  body {
+    display: grid;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(315deg,#ffffff,#46DAA2);
+  }
+
+
+
+
+
+  

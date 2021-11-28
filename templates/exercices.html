@@ -1,0 +1,35 @@
+{%extends "menu.html"%}
+{%block content%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/exercices.css')}}">
+<h1>Exercices</h1>
+<div class='exercices'>
+  <div class="matieres">
+    <div class="images">
+      <div class="imgFR">
+        <img src="{{url_for('static',filename='images/ecriture.jpg')}}", class="">
+        <div class="img__Overlay">
+          <div class="img__title">
+            <a href="{{url_for('sonsFR')}}">Français</a>
+          </div>
+        </div>
+      </div>
+      <div class="imgMT">
+        <img src="{{url_for('static',filename='images/calculs.jpg')}}", class="">
+        <div class="img__Overlay">
+          <div class="img__title">
+            <a href="{{url_for('pdMT')}}">Mathématiques</a>
+          </div>
+        </div>
+      </div>
+      <div class="imgUS">
+        <img src="{{url_for('static',filename='images/compas.jpg')}}", class="">
+        <div class="img__Overlay">
+          <div class="img__title">
+            <a href="{{url_for('tempsUS')}}">Univers Social</a>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </div>
+</div>
+{%endblock%}

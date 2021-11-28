@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RickEd</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+  </head>
+    <header>
+      <div class="container">
+        <image class="logo", src="{{ url_for('static',filename='images/logo.png') }}">
+        <h1 class="logo_name">RickEd</h1>
+        <strong><nav>
+          <div class="menu">
+            <li><a href="{{ url_for('accueil') }}" class="mad-link">Accueil</a></li>
+            <li><a href="{{ url_for('exercices') }}" class="cool-link">Exercices</a></li>
+            <li><a href="{{ url_for('jeux') }}" class="cool-link">Jeux</a></li>
+            <li><a href="{{ url_for('plus') }}" class="cool-link">Autres</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+  <div class='menuFr'>
+    <li>Catégories</li>
+    <div class="cat">
+      <li><a href="{{url_for('tempsUS')}}">Le temps et les nombres</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('jrsemUS')}}">Les jours de la semaine</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('moisanUS')}}">Les mois de l'année</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('difsaisUS')}}">Les différences des saisons</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('voctempsUS')}}">Le vocabulaire du temps</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('frequUS')}}">La rareté d'une activité</a></li>
+    </div>
+  </div>
+  <div class="container1">
+    {%block content%}
+    {%endblock%}
+  </div>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RickEd</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+  </head>
+    <header>
+      <div class="container">
+        <image class="logo", src="{{ url_for('static',filename='images/logo.png') }}">
+        <h1 class="logo_name">RickEd</h1>
+        <strong><nav>
+          <div class="menu">
+            <li><a href="{{ url_for('accueil') }}" class="mad-link">Accueil</a></li>
+            <li><a href="{{ url_for('exercices') }}" class="cool-link">Exercices</a></li>
+            <li><a href="{{ url_for('jeux') }}" class="cool-link">Jeux</a></li>
+            <li><a href="{{ url_for('plus') }}" class="cool-link">Autres</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+  <div class='menuMt'>
+    <li>Catégories</li>
+    <div class="cat">
+      <li><a href="{{url_for('pdMT')}}">Le dénombrement</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('pmMT')}}">Les comparaisons < et ></et></a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('ordreMT')}}">Les ordres croissants et décroissants</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('suiteMT')}}">Les suites de nombres</a></li>
+    </div>
+    <div class="cat">
+      <li><a href="{{url_for('vocgeoMT')}}">Le vocabulaire de géométrie</a></li>
+    </div>
+  </div>
+  <div class="container1">
+    {%block content%}
+    {%endblock%}
+  </div>
+</html>
